@@ -1,10 +1,10 @@
 'use strict'
 
 async function pesquisarFotos(){
-    const url = `https://api.thecatapi.com/v1/images/beng`
+    const url = `https://api.thecatapi.com/v1/images/search?limit=10`
     const response = await fetch(url)
     const data = await response.json()
-    return data.message
+    return data.map(cat => cat.url)
 }
 
 function criarImagem(link){
