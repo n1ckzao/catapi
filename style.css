@@ -13,7 +13,7 @@ body {
 img {
     width: 17vw;
     margin: 5px;
-    border: 2px solid white
+    border: 3px solid white
 }
 .galeria {
     display: flex;
